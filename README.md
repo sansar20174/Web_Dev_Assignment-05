@@ -118,10 +118,13 @@ Mobile	≤ 600px	Single-column product grid, simple navigation, tighter spacing
 ---
 
 ## 📁 Project Structure
+
 capstone-ecommerce/
+
 │── index.html
+
 │── style.css
-│── images/ (optional for project)
+
 │── README.md
 
 ---
