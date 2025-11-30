@@ -1,0 +1,354 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UrbanMart — E‑commerce Store UI</title>
+  <link rel="stylesheet" href="capstone_ecommerce_style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header container" role="banner">
+    <div class="nav-row">
+      <div class="brand">
+        <div class="logo" aria-hidden>CS</div>
+        <div>
+          <div style="font-weight:700">UrbanMart</div>
+          <div class="muted" style="font-size:.85rem;">Modern UI </div>
+        </div>
+      </div>
+
+      <nav class="primary" aria-label="Primary Navigation">
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#" class="cta">Sign Up</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-left">
+        <h1 id="hero-title">Elevate Your Lifestyle with Exceptional Products.</h1>
+        <p>An all-in-one e-commerce platform offering a wide range of products at unbeatable prices.</p>
+        <div class="hero-cta">
+          <a href="#products" class="cta">Browse Collections</a>
+          <a href="#contact" class="muted" style="align-self:center">Contact Sales</a>
+        </div>
+      </div>
+
+      <aside class="hero-right" aria-label="Quick stats">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.6rem">
+          <div>
+            <div class="muted">Featured</div>
+            <div style="font-weight:700">Top-rated picks</div>
+          </div>
+          <div class="muted">Updated: Nov 2025</div>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <strong>1,200+</strong>
+            <span>Products</span>
+          </div>
+          <div class="stat">
+            <strong>4.8★</strong>
+            <span>Avg rating</span>
+          </div>
+          <div class="stat">
+            <strong>Free</strong>
+            <span>Shipping over ₹1999</span>
+          </div>
+          <div class="stat">
+            <strong>30-day</strong>
+            <span>Returns</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="shop" aria-label="Shop area">
+      <aside class="filters" aria-labelledby="filters-heading">
+        <h3 id="filters-heading">Filters</h3>
+        <div class="filter-section">
+          <label for="search" class="muted">Search</label>
+          <input id="search" type="search" placeholder="Search products" style="width:100%;padding:.5rem;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.04);color:inherit">
+        </div>
+
+        <div class="filter-section">
+          <div class="muted">Categories</div>
+          <div class="checkbox-row"><input id="cat-1" type="checkbox"><label for="cat-1">Outdoor</label></div>
+          <div class="checkbox-row"><input id="cat-2" type="checkbox"><label for="cat-2">Electronics</label></div>
+          <div class="checkbox-row"><input id="cat-3" type="checkbox"><label for="cat-3">Accessories</label></div>
+        </div>
+
+        <div class="filter-section">
+          <label class="muted">Price range</label>
+          <div class="range-field"><input type="range" min="0" max="5000" value="1200" aria-label="Price range"></div>
+          <div class="muted" style="font-size:.85rem;margin-top:.3rem">Showing visual filter only — no JS</div>
+        </div>
+
+        <div class="filter-section">
+          <h4 style="margin:0 .0 .4rem">Top Brands</h4>
+          <ul style="margin:0;padding:0;list-style:none">
+            <li class="muted">• TrailPro</li>
+            <li class="muted">• NovaTech</li>
+            <li class="muted">• SeaPeak</li>
+          </ul>
+        </div>
+      </aside>
+
+      <section id="products">
+        <header style="display:flex;justify-content:space-between;align-items:end;margin-bottom:.75rem">
+          <div>
+            <h2 style="margin:.1rem 0">Featured Products</h2>
+            <div class="muted">High-quality items curated </div>
+          </div>
+
+          <div style="display:flex;gap:.6rem;align-items:center">
+            <label class="muted">Sort</label>
+            <select aria-label="Sort products" style="background:transparent;border:1px solid rgba(255,255,255,0.04);padding:.4rem;border-radius:8px;color:inherit">
+              <option>Popular</option>
+              <option>Price: Low to High</option>
+              <option>Newest</option>
+            </select>
+          </div>
+        </header>
+
+        <div class="products-grid" role="list">
+
+          <article class="product" role="listitem" aria-labelledby="p1-title">
+            <div style="position:relative">
+              <div class="thumb"><img src="https://images.unsplash.com/photo-1622560481979-f5b0174242a0?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Compact hiking backpack"/></div>
+              <span class="badge" style="position:absolute;left:10px;top:10px">New</span>
+            </div>
+            <div class="meta"><h4 id="p1-title">TrailPro Compact Backpack</h4><div class="price">₹2,499</div></div>
+            <div class="tag">Lightweight • 20L</div>
+            <p class="muted" style="font-size:.92rem">Durable fabric, water-resistant coating, and ergonomic straps — perfect for day hikes and travel.</p>
+            <div class="card-actions">
+              <button class="btn">Details</button>
+              <button class="btn buy">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product" role="listitem" aria-labelledby="p2-title">
+            <div class="thumb"><img src="https://plus.unsplash.com/premium_photo-1679513691474-73102089c117?q=80&w=2013&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Wireless noise-cancelling headphones"/></div>
+            <div class="meta"><h4 id="p2-title">NovaSound Headphones</h4><div class="price">₹6,299</div></div>
+            <div class="tag">Wireless • ANC</div>
+            <p class="muted" style="font-size:.92rem">Premium audio quality with long battery life and comfortable earcups for all-day use.</p>
+            <div class="card-actions">
+              <button class="btn">Details</button>
+              <button class="btn buy">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product" role="listitem" aria-labelledby="p3-title">
+            <div class="thumb"><img src="https://i.pinimg.com/1200x/7b/8e/ab/7b8eabadfd580d1bb922a4a32d6d4a55.jpg" alt="Stainless travel mug"/></div>
+            <div class="meta"><h4 id="p3-title">ThermoMug Stainless</h4><div class="price">₹999</div></div>
+            <div class="tag">Insulated • 500ml</div>
+            <p class="muted" style="font-size:.92rem">Keeps drinks hot or cold for hours. Leak-resistant lid designed for commuters.</p>
+            <div class="card-actions">
+              <button class="btn">Details</button>
+              <button class="btn buy">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product" role="listitem" aria-labelledby="p7-title">
+            <div class="thumb"><img src="https://images.unsplash.com/photo-1587204760600-77d8d18d143e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Compact tripod"></div>
+            <div class="meta"><h4 id="p7-title">FlexiTrip Compact Tripod</h4><div class="price">₹1,299</div></div>
+            <div class="tag">Camera • Portable</div>
+            <p class="muted">Lightweight tripod with adjustable legs and phone mount — perfect for vlogging.</p>
+            <div class="card-actions"><button class="btn">Details</button><button class="btn buy">Add to cart</button></div>
+          </article>
+          
+          <article class="product" role="listitem" aria-labelledby="p8-title">
+            <div class="thumb"><img src="https://i.pinimg.com/736x/27/cf/58/27cf5825137294265985549d970b4d24.jpg" alt="Yoga mat on floor"></div>
+            <div class="meta"><h4 id="p8-title">ZenGrip Yoga Mat</h4><div class="price">₹1,099</div></div>
+            <div class="tag">Non-slip • 6mm</div>
+            <p class="muted">Comfortable, easy-to-clean mat with excellent grip for all yoga levels.</p>
+            <div class="card-actions"><button class="btn">Details</button><button class="btn buy">Add to cart</button></div>
+          </article>
+          
+          <article class="product" role="listitem" aria-labelledby="p9-title">
+            <div class="thumb"><img src="https://i.pinimg.com/1200x/1b/dd/aa/1bddaa19d6a629e01505000fbf5dc5c6.jpg" alt="Smartwatch on wrist"></div>
+            <div class="meta"><h4 id="p9-title">SwiftBand Smartwatch</h4><div class="price">₹4,999</div></div>
+            <div class="tag">Fitness • Notifications</div>
+            <p class="muted">Track steps, heart rate, and notifications with a colorful AMOLED display.</p>
+            <div class="card-actions"><button class="btn">Details</button><button class="btn buy">Add to cart</button></div>
+          </article>
+
+          <article class="product" role="listitem" aria-labelledby="p10-title">
+            <div class="thumb"><img src="https://i.pinimg.com/1200x/b6/8e/44/b68e44b4b0f7094fd0c4db3e1a0ee2e4.jpg" alt="Ceramic coffee mug"></div>
+            <div class="meta"><h4 id="p10-title">MornCup Ceramic Mug</h4><div class="price">₹399</div></div>
+            <div class="tag">350ml • Dishwasher safe</div>
+            <p class="muted">Classic ceramic mug with a comfortable handle and modern matte finish.</p>
+            <div class="card-actions"><button class="btn">Details</button><button class="btn buy">Add to cart</button></div>
+          </article>
+
+          <article class="product" role="listitem" aria-labelledby="p11-title">
+            <div class="thumb"><img src="https://i.pinimg.com/1200x/66/28/eb/6628eb1b210845dab8eef9d3ee88ef4c.jpg" alt="Kids puzzle game"></div>
+            <div class="meta"><h4 id="p11-title">PuzzleJoy 1000pc</h4><div class="price">₹749</div></div>
+            <div class="tag">Family • 8+</div>
+            <p class="muted">High-quality puzzle with vibrant art — great for family evenings.</p>
+            <div class="card-actions"><button class="btn">Details</button><button class="btn buy">Add to cart</button></div>
+          </article>
+
+          <article class="product" role="listitem" aria-labelledby="p12-title">
+            <div class="thumb"><img src="https://i.pinimg.com/1200x/6f/1a/9a/6f1a9aaa3f982ac9a11dc362de0f8e1e.jpg" alt="Indoor plant in pot"></div>
+            <div class="meta"><h4 id="p12-title">LeafyHome Indoor Plant</h4><div class="price">₹499</div></div>
+            <div class="tag">Low-light • Air-purifying</div>
+            <p class="muted">Easy-care plant that brightens interiors and improves air quality.</p>
+            <div class="card-actions"><button class="btn">Details</button><button class="btn buy">Add to cart</button></div>
+          </article>
+          
+          <article class="product" role="listitem" aria-labelledby="p13-title">
+            <div class="thumb"><img src="https://i.pinimg.com/1200x/40/06/1a/40061a806ab36346fb18d57c548b618d.jpg" alt="Wireless speaker"></div>
+            <div class="meta"><h4 id="p13-title">BeatBox Portable Speaker</h4><div class="price">₹2,199</div></div>
+            <div class="tag">Bluetooth • 12hr</div>
+            <p class="muted">Compact speaker with punchy bass and IPX5 splash resistance.</p>
+            <div class="card-actions"><button class="btn">Details</button><button class="btn buy">Add to cart</button></div>
+          </article>
+
+          <article class="product" role="listitem" aria-labelledby="p14-title">
+            <div class="thumb"><img src="https://i.pinimg.com/1200x/af/87/14/af8714504d4e5b5137012576a3ef28dd.jpg" alt="Leather wallet"></div>
+            <div class="meta"><h4 id="p14-title">Crafted Leather Wallet</h4><div class="price">₹1,299</div></div>
+            <div class="tag">Genuine • 6 slots</div>
+            <p class="muted">Slim wallet with RFID protection and soft-touch finish.</p>
+            <div class="card-actions"><button class="btn">Details</button><button class="btn buy">Add to cart</button></div>
+          </article>
+
+          <article class="product" role="listitem" aria-labelledby="p15-title">
+            <div class="thumb"><img src="https://i.pinimg.com/1200x/7e/ed/33/7eed3374edcbfb0ec3d568d67ec09fcf.jpg" alt="Bluetooth earphones"></div>
+            <div class="meta"><h4 id="p15-title">PulsePods Earbuds</h4><div class="price">₹2,799</div></div>
+            <div class="tag">TWS • Charging case</div>
+            <p class="muted">True wireless earbuds with touch controls and noise isolation.</p>
+            <div class="card-actions"><button class="btn">Details</button><button class="btn buy">Add to cart</button></div>
+          </article>
+
+          <article class="product" role="listitem" aria-labelledby="p16-title">
+            <div class="thumb"><img src="https://i.pinimg.com/1200x/08/ba/f0/08baf006655ffbae57eae0e448ea7541.jpg" alt="Desk lamp"></div>
+            <div class="meta"><h4 id="p16-title">GlowDesk LED Lamp</h4><div class="price">₹1,199</div></div>
+            <div class="tag">Adjustable • Eye-care</div>
+            <p class="muted">Dimmable lamp with warm-to-cool light modes and USB charging port.</p>
+            <div class="card-actions"><button class="btn">Details</button><button class="btn buy">Add to cart</button></div>
+          </article>
+
+          <article class="product" role="listitem" aria-labelledby="p17-title">
+            <div class="thumb"><img src="https://i.pinimg.com/1200x/e0/80/81/e0808155e1efaa2c5225b540d9c1459a.jpg" alt="Backpack rain cover"></div>
+            <div class="meta"><h4 id="p17-title">RainShield Backpack Cover</h4><div class="price">₹349</div></div>
+            <div class="tag">Waterproof • Compact</div>
+            <p class="muted">Stretch-fit cover that protects backpacks from sudden rain showers.</p>
+            <div class="card-actions"><button class="btn">Details</button><button class="btn buy">Add to cart</button></div>
+          </article>
+
+          <article class="product" role="listitem" aria-labelledby="p18-title">
+            <div class="thumb"><img src="https://i.pinimg.com/1200x/ac/cf/20/accf20ec57c31a782534e1843b35fa04.jpg" alt="Notebook and pen"></div>
+            <div class="meta"><h4 id="p18-title">FieldNotes Journal</h4><div class="price">₹249</div></div>
+            <div class="tag">A5 • 80 pages</div>
+            <p class="muted">Durable journal for notes and sketches with a clothbound cover.</p>
+            <div class="card-actions"><button class="btn">Details</button><button class="btn buy">Add to cart</button></div>
+          </article>
+
+          <article class="product" role="listitem" aria-labelledby="p4-title">
+            <div class="thumb"><img src="https://i.pinimg.com/1200x/e7/3f/7b/e73f7b044a3656d9b0b9784bd64ed998.jpg" alt="Portable power bank"/></div>
+            <div class="meta"><h4 id="p4-title">PowerCore 20K</h4><div class="price">₹1,799</div></div>
+            <div class="tag">Fast-charge • 20,000mAh</div>
+            <p class="muted" style="font-size:.92rem">High-capacity power bank with multiple ports and built-in safety features.</p>
+            <div class="card-actions">
+              <button class="btn">Details</button>
+              <button class="btn buy">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product" role="listitem" aria-labelledby="p5-title">
+            <div class="thumb"><img src="https://i.pinimg.com/1200x/26/8e/91/268e919172ea7cf1b9bd585cd1046499.jpg" alt="Multipurpose camping knife"/></div>
+            <div class="meta"><h4 id="p5-title">SeaPeak Multi Knife</h4><div class="price">₹1,199</div></div>
+            <div class="tag">Camping • Multi-tool</div>
+            <p class="muted" style="font-size:.92rem">Compact toolkit with stainless blades and durable grip for outdoor use.</p>
+            <div class="card-actions">
+              <button class="btn">Details</button>
+              <button class="btn buy">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="product" role="listitem" aria-labelledby="p6-title">
+            <div class="thumb"><img src="https://i.pinimg.com/736x/53/a1/91/53a191240780a6fb50af4d8e5d3c8518.jpg" alt="Foldable picnic blanket"/></div>
+            <div class="meta"><h4 id="p6-title">ComfyFold Blanket</h4><div class="price">₹899</div></div>
+            <div class="tag">Waterproof • Compact</div>
+            <p class="muted" style="font-size:.92rem">Lightweight blanket with water-resistant backing — ideal for parks and beaches.</p>
+            <div class="card-actions">
+              <button class="btn">Details</button>
+              <button class="btn buy">Add to cart</button>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="newsletter" style="margin-top:1rem">
+          <div style="min-width:40%">
+            <div style="font-weight:700">Join our newsletter</div>
+            <div class="muted" style="font-size:.92rem">Get 10% off your first order</div>
+          </div>
+          <form aria-label="Subscribe to newsletter">
+            <input type="email" placeholder="Your email address" aria-label="Email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </section>
+
+    <section id="about" style="margin-top:1.5rem">
+      <h3>About this project</h3>
+      <p class="muted">Our e-commerce platform is designed to make online shopping simple, fast, and enjoyable. We bring together a wide collection of quality products—from daily essentials to lifestyle accessories—so you can find everything in one place. Our website focuses on providing a seamless experience with easy navigation, secure checkout, and clear product information. Whether you're looking for the latest gadgets, stylish home items, or everyday essentials, we aim to deliver value, reliability, and convenience right to your doorstep.</p>
+    </section>
+
+    <section id="contact" style="margin-top:1rem">
+      <h3>Contact / Inquiry</h3>
+      <form style="display:grid;grid-template-columns:1fr 1fr;gap:.6rem;max-width:780px;margin-top:.6rem" aria-label="Contact form">
+        <div>
+          <label for="name">Name</label>
+          <input id="name" type="text" required placeholder="Your full name" style="width:100%;padding:.5rem;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.04)">
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" type="email" required placeholder="you@example.com" style="width:100%;padding:.5rem;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.04)">
+        </div>
+        <div style="grid-column:1/ -1">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="How can we help?" style="width:100%;padding:.5rem;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.04)"></textarea>
+        </div>
+        <div style="grid-column:1/ -1;display:flex;justify-content:flex-end">
+          <button type="submit" class="cta">Send Inquiry</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer container" role="contentinfo">
+    <div class="footer-row">
+      <div>
+        <div style="font-weight:700">UrbanMart</div>
+        <div class="muted">© 2025 UrbanMart — Capstone project</div>
+      </div>
+      <div style="display:flex;gap:.6rem;align-items:center">
+        <a href="#" aria-label="Twitter" title="Twitter">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden><path d="M22 5.8c-.6.3-1.3.5-2 .6.7-.4 1.2-1 1.5-1.7-.6.4-1.4.8-2.2 1-.7-.8-1.8-1.3-3-1.3-2.3 0-4.1 1.8-4.1 4.1 0 .3 0 .6.1.9-3.4-.2-6.4-1.8-8.4-4.3-.4.6-.7 1.4-.7 2.2 0 1.5.8 2.8 2.1 3.6-.5 0-1-.2-1.4-.3v.1c0 2.1 1.5 3.9 3.5 4.3-.4.1-.9.2-1.4.2-.3 0-.6 0-.9-.1.6 1.8 2.2 3.1 4.1 3.1-1.5 1.2-3.3 2-5.3 2-.3 0-.7 0-1-.1 1.9 1.2 4.2 1.9 6.7 1.9 8 0 12.4-6.6 12.4-12.3v-.6c.8-.6 1.5-1.3 2-2.2-.7.3-1.5.5-2.3.6z" fill="currentColor"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram" title="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zM18.5 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" fill="currentColor"/></svg>
+        </a>
+        <a href="#" aria-label="GitHub" title="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden><path d="M12 .5C5.7.5.9 5.4.9 11.7c0 5 3.2 9.3 7.6 10.8.6.1.8-.3.8-.6v-2.1c-3.1.7-3.8-1.5-3.8-1.5-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1 1.6.7 2 1.1.2-.9.5-1.6.8-2-2.5-.3-5.1-1.2-5.1-5.4 0-1.2.4-2.2 1.2-3-.1-.3-.5-1.4.1-2.9 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C18.8 4.1 19.8 4.4 19.8 4.4c.6 1.5.2 2.6.1 2.9.8.8 1.2 1.8 1.2 3 0 4.2-2.6 5.1-5.1 5.4.5.5.9 1.2.9 2.5v3.7c0 .3.2.7.8.6 4.4-1.5 7.6-5.8 7.6-10.8C23.1 5.4 18.3.5 12 .5z" fill="currentColor"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
